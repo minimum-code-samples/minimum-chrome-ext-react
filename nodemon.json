@@ -1,6 +1,6 @@
 {
 	"watch": ["src"],
-	"ext": "tsx,css,html,ts",
+	"ext": "tsx,scss,html,ts",
 	"ignore": ["src/**/*.spec.ts"],
 	"exec": "node_modules/.bin/vite build"
 }

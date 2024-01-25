@@ -8,6 +8,7 @@ import makeManifest from './plugins/make-manifest';
 const src = resolve(__dirname, 'src');
 const assetsDir = resolve(src, 'assets');
 const pagesDir = resolve(src, 'pages');
+const styleDir = resolve(src, 'style');
 
 const outDir = resolve(__dirname, 'dist');
 const publicDir = resolve(__dirname, 'public');
@@ -20,6 +21,7 @@ export default defineConfig({
 			'~assets': assetsDir,
 			'~pages': pagesDir,
 			'~public': publicDir,
+			'~style': styleDir,
 		},
 	},
 	plugins: [react(), makeManifest()],

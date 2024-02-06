@@ -31,6 +31,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				popup: resolve(pagesDir, 'popup', 'index.html'),
+				service: resolve(pagesDir, 'service', 'index.ts'),
 			},
 			output: {
 				entryFileNames: (chunk) => `src/pages/${chunk.name}/index.js`,

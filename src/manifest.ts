@@ -8,6 +8,10 @@ const manifest: ManifestV3 = {
 	version: packageJson.version,
 	version_name: `${packageJson.version}`,
 	description: '__MSG_extension_description__',
+	background: {
+		service_worker: 'src/pages/service/index.js',
+		type: 'module',
+	},
 
 	// Definition for the pop-up.
 	action: {
